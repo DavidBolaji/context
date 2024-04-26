@@ -3,10 +3,11 @@ import { useGlobalContext } from "../store";
 
 const Form = () => {
   const [user, setUser] = React.useState("");
-  const { setName } = useGlobalContext();
+  const { setName, setAge } = useGlobalContext();
 
   const handleClick = () => {
     setName(user);
+    setAge(50)
     setUser("");
   };
 
